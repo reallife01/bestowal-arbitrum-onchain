@@ -5,11 +5,11 @@ module.exports = {
     defaultNetwork: 'sepolia',
     networks: {
       hardhat: {},
-      sepolia: {
-        url: 'https://rpc.ankr.com/eth_sepolia',
-        accounts: [`0x${process.env.PRIVATE_KEY}`]
-      }
-    },
+    arbitrumSepolia: {
+      url: "https://sepolia-rollup.arbitrum.io/rpc",
+      accounts: [`0x${process.env.PRIVATE_KEY}`],
+    }
+  },
     settings: {
       optimizer: {
         enabled: true,
