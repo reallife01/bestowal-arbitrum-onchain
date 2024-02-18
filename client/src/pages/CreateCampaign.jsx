@@ -49,14 +49,6 @@ const CreateCampaign = () => {
       <div className="flex justify-center items-center p-[16px] sm:min-w-[380px] bg-[#3a3a43] rounded-[10px]">
         <h1 className="font-epilogue font-bold sm:text-[25px] text-[18px] leading-[38px] text-white">Start a Campaign</h1>
       </div>
-      {/* <Link to={"/hero"}>
-          <button
-            type="button"
-            className="border-0 bg-transparent focus:outline-none"
-          >
-            <FaTimes className="textWord" />
-          </button>
-        </Link> */}
       <div className="flex justify-center items-center mt-5">
         <div className="rounded-xl overflow-hidden h-20 w-20">
           <img
