@@ -2,11 +2,16 @@ import React, { useContext, createContext } from 'react';
 
 import { useAddress, useContract, useMetamask, useContractWrite } from '@thirdweb-dev/react';
 import { ethers } from 'ethers';
+import { ArbitrumSepolia } from "@thirdweb-dev/chains";
+import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 // import { EditionMetadataWithOwnerOutputSchema } from '@thirdweb-dev/sdk';
 
 const StateContext = createContext();
 
 export const StateContextProvider = ({ children }) => {
+  const sdk = new ThirdwebSDK(ArbitrumSepolia, {
+    clientId: "05df97614128323f67280efed6e3613a",
+  });
   const { contract } = useContract('0x92BB35c2a2F00034fB2459F078F8930dE80CddD6');
   const { mutateAsync: createCampaign } = useContractWrite(contract, 'createCampaign');
 
@@ -52,7 +57,7 @@ export const StateContextProvider = ({ children }) => {
   }
 
   const getUserCampaigns = async () => {
-    const allCampaigns = await getCampaigns();
+    const allCampaigns = await sdk.getCampaigns();
 
     const filteredCampaigns = allCampaigns.filter((campaign) => campaign.owner === address);
 
