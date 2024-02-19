@@ -28,7 +28,7 @@ const Message = require('./models/msgSchema');
 
 
 // These Method is Used to Get Data and Cookies from FrontEnd
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "http://localhost:5174", credentials: true }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());

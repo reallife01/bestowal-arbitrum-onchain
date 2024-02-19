@@ -13,11 +13,13 @@ import './app.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <ThirdwebProvider activeChain={ ArbitrumSepolia }> 
+  <ThirdwebProvider
+    activeChain={ArbitrumSepolia}
+  >
     <Router>
       <StateContextProvider>
         <App />
       </StateContextProvider>
     </Router>
-  </ThirdwebProvider> 
+  </ThirdwebProvider>
 )
