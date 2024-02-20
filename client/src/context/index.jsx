@@ -4,7 +4,7 @@ import { useAddress, useContract, useMetamask, useContractWrite } from '@thirdwe
 import { ethers } from 'ethers';
 import { ArbitrumSepolia } from "@thirdweb-dev/chains";
 import { ThirdwebSDK } from "@thirdweb-dev/sdk";
-// import { EditionMetadataWithOwnerOutputSchema } from '@thirdweb-dev/sdk';
+
 
 const StateContext = createContext();
 
