@@ -1,5 +1,5 @@
 import React from "react";
-import assets from "../../assets"; // Assuming your asset file is named index.js and located in the "../../assets" directory
+import assets from "../../assets"; // Assuming your asset file is named index.js and 
 import "./brand.css";
 
 const Brand = () => (
