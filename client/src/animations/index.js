@@ -185,9 +185,6 @@ export const closeMenu = () => {
       css: { display: "none" },
     });
 
-  // tl.to(".cursor-active", {
-  //   css: { className: "+=cursor" },
-  // }).to(".cursor2-active", { css: { className: "+=cursor2" } });
 };
 
 // recurrent animations
