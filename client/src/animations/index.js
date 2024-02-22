@@ -147,12 +147,6 @@ export const openMenu = () => {
       },
       "-=.3"
     );
-
-  // change cursor color when nav is open
-  // tl.to(".cursor", {
-  //   delay: -1,
-  //   css: { className: "+=cursor-active" },
-  // }).to(".cursor2", { delay: -1, css: { className: "+=cursor2-active" } });
 };
 
 export const closeMenu = () => {
